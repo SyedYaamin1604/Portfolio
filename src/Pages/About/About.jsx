@@ -13,11 +13,6 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa6";
 
 
-
-
-
-
-
 const About = () => {
   return (
     <>
