@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import image from "../../assets/SyedYaamin.jpg";
+import Resume from "../../assets/Resume.pdf"
 import 'animate.css';
 import { FaGithub, FaLinkedin, FaFacebook, FaHackerrank } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -35,8 +36,13 @@ const Home = () => {
             <button className='flex justify-center items-center gap-2 py-3 px-5 text-md lg:text-lg xl:text-2xl font-semibold border-2 border-blue-400 rounded-full social-icon text-blue-400 bg-black hover:border-black hover:text-black hover:bg-blue-600'>
               Contact Me <span className='text-xl xl:text-2xl'><CgProfile /></span>
             </button>
-            <button className='flex justify-center items-center gap-2 py-3 px-5 text-md lg:text-lg xl:text-2xl font-semibold border-2 border-black rounded-full social-icon bg-blue-600 text-black hover:bg-black hover:border-blue-400 hover:text-blue-400'>
-              Download Resume <span className='text-xl xl:text-2xl'><IoMdDownload /></span>
+            <button className='py-3 px-5 text-md lg:text-lg xl:text-2xl font-semibold border-2 border-black rounded-full social-icon bg-blue-600 text-black hover:bg-black hover:border-blue-400 hover:text-blue-400'>
+              <a
+                href={Resume}
+                download = "Resume.pdf" 
+                className='flex justify-center items-center gap-2'>
+                Download Resume <span className='text-xl xl:text-2xl'><IoMdDownload /></span>
+              </a>
             </button>
           </div>
         </div>
