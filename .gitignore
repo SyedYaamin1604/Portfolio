@@ -17,6 +17,9 @@ postcss.config.js
 tailwind.config.js
 vite.config.js
 eslint.config.js
+/.firebase
+firebase.json
+.firebaserc
 
 # Editor directories and files
 .vscode/*
