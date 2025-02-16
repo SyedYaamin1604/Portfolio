@@ -2,6 +2,7 @@ import React from 'react'
 import PortfolioImage from '../../assets/PortfolioImage.jpg'
 import BuySellCorner from "../../assets/Buy-Sell-Corner.jpg"
 import BloggingWebsite from "../../assets/BloggingWebsite.jpg"
+import Weatherly from "../../assets/Weatherly.jpg"
 import { Link } from 'react-router-dom'
 
 const Projects = () => {
@@ -60,6 +61,22 @@ const Projects = () => {
             <div className="card-actions flex justify-center items-center gap-5">
               <button className="btn btn-primary bg-blue-400 border-none text-white font-bold" onClick={()=> window.open("https://github.com/SyedYaamin1604/Blogging-Website")}>Github</button>
               <button className="btn btn-primary bg-blue-400 border-none text-white font-bold" onClick={()=> window.open("https://react-blogging-app-1.web.app/")}>Live Demo</button>
+            </div>
+          </div>
+        </div>
+        <div className="card bg-blue-950 bg-opacity-80 w-96 shadow-2xl shadow-blue-400 transition delay-100 duration-1000 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-600">
+          <figure className="px-10 pt-10">
+            <img
+              src={Weatherly}
+              alt="Blogging Website"
+              className="rounded-xl" />
+          </figure>
+          <div className="card-body items-center text-center">
+            <h2 className="card-title text-white text-3xl font-bold">Weatherly</h2>
+            <p className='text-white'>A responsive weather app providing real-time weather updates, including temperature, humidity, and a 5-day forecast.</p>
+            <div className="card-actions flex justify-center items-center gap-5">
+              <button className="btn btn-primary bg-blue-400 border-none text-white font-bold" onClick={()=> window.open("https://github.com/SyedYaamin1604/Weatherly")}>Github</button>
+              <button className="btn btn-primary bg-blue-400 border-none text-white font-bold" onClick={()=> window.open("https://weatherly1604.web.app/")}>Live Demo</button>
             </div>
           </div>
         </div>
